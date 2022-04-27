@@ -1,24 +1,16 @@
-# README
+# Kittens API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Description
 
-Things you may want to cover:
+A small webpage and API to create, view, update or delete a kitten.
 
-* Ruby version
+### Objectives
 
-* System dependencies
+- Implement a basic webpage to create, view, update or delete a kitten.
+- Implement an API to interact with the data in JSON format.
 
-* Configuration
+### Technologies
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- HTML5, CSS3
+- Ruby on Rails
+- SQLite
