@@ -37,6 +37,12 @@
     font-weight: bold;
 }
 
+.card-actions {
+    margin: 2vh 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .kitten-details {
     border: 2px dotted black;
     border-radius: 10px;

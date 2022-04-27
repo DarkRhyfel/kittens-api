@@ -17,6 +17,10 @@
                     <p class="card-label">Softness</p>
                     <p class="card-text"> <%= kitten.softness %> </p>
                 </div>
+                <div class="card-actions">
+                    <%= link_to 'Edit Kitten', edit_kitten_path(kitten), method: :patch %>
+                    <%= link_to 'Delete Kitten', kitten, data: { turbo_method: :delete } %>
+                </div>
             </div>
         <% end %>
     <% end %>

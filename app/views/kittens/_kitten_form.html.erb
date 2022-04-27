@@ -19,5 +19,8 @@
     </div>
     <div class="actions">
         <%= f.submit action_name, class: 'submit-button' %>
+        <% if show_delete %>
+            <%= link_to 'Delete Kitten', @kitten, data: { turbo_method: :delete } %>
+        <% end %>
     </div>
 <% end %>
