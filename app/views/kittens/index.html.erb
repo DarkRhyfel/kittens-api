@@ -1,3 +1,6 @@
+<% if flash[:notice] %>
+    <div class="notice-negative"> <%= flash[:notice] %> </div>
+<% end %>
 <div class="kitten-container">
     <% if @kittens.empty? %>
         <p class="empty-message" > No kittens yet :( </p>

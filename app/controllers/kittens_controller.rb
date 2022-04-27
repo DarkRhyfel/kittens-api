@@ -17,7 +17,7 @@ class KittensController < ApplicationController
 
     if @kitten.save
       respond_to do |format|
-        format.html { redirect_to @kitten }
+        format.html { redirect_to @kitten, notice: 'You added a kitten :3' }
       end
     else
       respond_to do |format|
@@ -33,7 +33,7 @@ class KittensController < ApplicationController
   def update
     if @kitten.update(kitten_params)
       respond_to do |format|
-        format.html { redirect_to @kitten }
+        format.html { redirect_to @kitten, notice: 'You edited the kitten :D' }
       end
     else
       respond_to do |format|
@@ -45,7 +45,7 @@ class KittensController < ApplicationController
   def destroy
     @kitten.destroy
 
-    redirect_to root_path, status: :see_other
+    redirect_to root_path, status: :see_other, notice: 'You deleted the kitten :c'
   end
 
   private

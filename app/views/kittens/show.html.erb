@@ -1,4 +1,7 @@
 <div class="kitten-details">
+    <% if flash[:notice] %>
+        <div class="notice-positive"> <%= flash[:notice] %> </div>
+    <% end %>
     <p class="kitten-name"> <%= @kitten.name %> </p>
     <div class="kitten-data-container">
         <div class="kitten-data kitten-age">

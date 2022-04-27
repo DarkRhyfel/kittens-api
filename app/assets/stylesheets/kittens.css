@@ -1,6 +1,7 @@
 .kitten-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    gap: 2vh 2vw;
 }
 
 .kitten-card {
