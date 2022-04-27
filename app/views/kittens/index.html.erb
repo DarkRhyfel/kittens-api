@@ -1,0 +1,23 @@
+<div class="kitten-container">
+    <% if @kittens.empty? %>
+        <p class="empty-message" > No kittens yet :( </p>
+    <% else %>
+        <% @kittens.each do |kitten| %>
+            <div class="kitten-card">
+                <p class="card-title"> <%= kitten.name %> </p>
+                <div class="card-field">
+                    <p class="card-label">Age</p>
+                    <p class="card-text"> <%= kitten.age %> </p>
+                </div>
+                <div class="card-field">
+                    <p class="card-label">Cuteness</p>
+                    <p class="card-text"> <%= kitten.cuteness %> </p>
+                </div>
+                <div class="card-field">
+                    <p class="card-label">Softness</p>
+                    <p class="card-text"> <%= kitten.softness %> </p>
+                </div>
+            </div>
+        <% end %>
+    <% end %>
+</div>

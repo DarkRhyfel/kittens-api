@@ -13,3 +13,50 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 1vh;
+    background-color: rgb(238, 238, 238);
+}
+
+main {
+    padding: 2vh 4vw;
+}
+
+.navbar {
+    height: 12vh;
+    padding: 0 2vw;
+    background-color: rgb(255, 95, 0);
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    align-items: center;
+}
+
+.navbar-home {
+    grid-column: 1 / 2;
+}
+
+.navbar-title {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-options {
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(7vw, 1fr));
+    direction: rtl;
+}
+
+.navbar-option {
+    padding: 2vh 2vw;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(178, 6, 0);
+    text-decoration: none;
+    text-align: center;
+}

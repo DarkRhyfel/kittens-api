@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>KittensApi</title>
+    <title>Kittens API</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar">
+      <div class="navbar-home">
+        <%= link_to 'Kittens', root_path, class: 'navbar-title' %>
+      </div>
+      <div class="navbar-options">
+        <%= link_to 'Add Kitten', new_kitten_path, class: 'navbar-option' %>
+      </div>
+    </nav>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>

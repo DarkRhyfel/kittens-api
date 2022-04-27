@@ -1,0 +1,23 @@
+<%= form_with model: @kitten do |f| %>
+    <div class="simple-field">
+        <%= f.label :name %>
+        <%= f.text_field :name, autofocus: true %>
+    </div>
+    <div class="numeric-fields">
+        <div class="numeric-field">
+            <%= f.label :age %>
+            <%= f.number_field :age, min: 1 %>
+        </div>
+        <div class="numeric-field">
+            <%= f.label :cuteness %>
+            <%= f.number_field :cuteness, in: 1..5 %>
+        </div>
+        <div class="numeric-field">
+            <%= f.label :softness %>
+            <%= f.number_field :softness, in: 1..5 %>
+        </div>
+    </div>
+    <div class="actions">
+        <%= f.submit action_name, class: 'submit-button' %>
+    </div>
+<% end %>
