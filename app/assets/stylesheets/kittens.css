@@ -1,4 +1,84 @@
 .kitten-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+}
+
+.kitten-card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2vh 3vw;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(178, 6, 0);
+    text-decoration: none;
+}
+
+.card-field:first-of-type {
+    margin-top: 2vh;
+}
+
+.card-field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2vw;
+}
+
+.card-label,
+.card-text {
+    font-size: 1rem;
+    margin: 0.75vh 0;
+}
+
+.card-label {
+    font-weight: bold;
+}
+
+.kitten-details {
+    border: 2px dotted black;
+    border-radius: 10px;
+    padding: 3vh 5vw;
+    margin: 0 25vw;
+    background-color: white;
+}
+
+.kitten-name {
+    margin: 1.5vh 0;
+    font-size: 2.5rem;
+    color: rgb(178, 6, 0);
+}
+
+.kitten-data-container {
+    display: grid;
+    grid-template: "age none-1" 1fr "none-2 cute" 1fr "soft none-3" 1fr / 1fr 1fr;
+}
+
+.kitten-data {
+    padding: 1vh 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kitten-field,
+.kitten-value {
+    font-size: 1.25rem;
+}
+
+.kitten-field {
+    font-weight: bold;
+}
+
+.kitten-age {
+    grid-area: age;
+}
+
+.kitten-cute {
+    grid-area: cute;
+}
+
+.kitten-soft {
+    grid-area: soft;
 }

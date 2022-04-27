@@ -4,7 +4,7 @@
     <% else %>
         <% @kittens.each do |kitten| %>
             <div class="kitten-card">
-                <p class="card-title"> <%= kitten.name %> </p>
+                <%= link_to kitten.name, kitten_path(kitten), class: 'card-title' %>
                 <div class="card-field">
                     <p class="card-label">Age</p>
                     <p class="card-text"> <%= kitten.age %> </p>
